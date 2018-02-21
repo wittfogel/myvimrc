@@ -1,5 +1,5 @@
 "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-"                                                                                                "
+""                                                                                                "
 "                                          .::::.                                                "
 "                             ___________ :;;;;:`____________                                    "
 "                             \_________/ ?????L \__________/                                    "
@@ -105,6 +105,7 @@ filetype on
 filetype plugin on
 filetype plugin indent on
 
+let mapleader=","
 "=====================================================
 "" General settings
 "=====================================================
@@ -323,7 +324,7 @@ set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
 "=====================================================
 
 " python executables for different plugins
-let g:pymode_python='python'
+let g:pymode_python='python3'
 
 " rope
 let g:pymode_rope=0
@@ -410,17 +411,6 @@ vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
 
-"python3 << EOF
-"import vim
-"import git
-"def is_git_repo():
-"	try:
-"		_ = git.Repo('.', search_parent_directories=True).git_dir
-"		return "1"
-"	except:
-"		return "0"
-"vim.command("let g:pymode_rope = " + is_git_repo())
-"EOF
 "=====================================================
 "" YCM  Settings 
 "=====================================================
